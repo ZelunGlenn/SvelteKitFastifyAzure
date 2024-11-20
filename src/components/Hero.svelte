@@ -1,6 +1,7 @@
 <script>
   import SectionWrapper from "./SectionWrapper.svelte"
   import Header from "./Header.svelte"
+  import CtAs from "./CTAs.svelte";
 </script>
 
 
@@ -19,6 +20,14 @@
       </span>
       and much much more.
     </p>
-
+    <CtAs />
+    <div class="flex items-center justify-center gap-2 text-base">
+      <p>4.6</p>
+      {#each [0,1,2,3,4] as index}
+      <div class="grid place-items-center relative">
+        <i class="fa-solid fa-star opacity-0"></i>
+      </div>
+      {/each}
+    </div>
   </div>
 </SectionWrapper>
